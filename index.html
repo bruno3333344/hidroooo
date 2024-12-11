@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidroponia - Bruno Mendoza</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            cursor: url('https://example.com/lechuga-cursor.png'), auto;
+            overflow-x: hidden;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: left;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            padding: 20px;
+            text-align: justify;
+            line-height: 1.6;
+            min-height: 100vh;
+            transition: background-color 0.5s ease;
+        }
+        h2 {
+            color: #4CAF50;
+            margin-top: 30px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        img.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        video {
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            font-size: 12px;
+        }
+        body.dark-mode {
+            background-color: #333;
+            color: #f4f4f9;
+        }
+        body.dark-mode header {
+            background-color: #222;
+        }
+        body.dark-mode footer {
+            background-color: #444;
+        }
+        body.dark-mode h2 {
+            color: #a5d6a7;
+        }
+        .content.dark-mode {
+            color: #e0e0e0;
+        }
+        .dark-mode-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: transparent;
+            border: none;
+            font-size: 3rem;
+            cursor: pointer;
+            z-index: 1000;
+            transition: transform 0.3s ease;
+        }
+        .dark-mode-toggle:hover {
+            transform: scale(1.1);
+        }
+        .dark-mode-toggle .sun,
+        .dark-mode-toggle .moon {
+            display: inline-block;
+            font-size: 3rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            transform: perspective(600px) rotateY(0deg);
+        }
+        .dark-mode-toggle .sun:hover,
+        .dark-mode-toggle .moon:hover {
+            transform: perspective(600px) rotateY(180deg);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bienvenidos a la Página sobre Hidroponia</h1>
+    </header>
+
+    <div class="content">
+        <section id="section1">
+            <h2>¿Qué es la Hidroponia?</h2>
+            <p>La hidroponía es un método de cultivo de plantas en soluciones minerales en lugar de suelos convencionales. Las raíces de las plantas están suspendidas en agua rica en nutrientes, lo que permite un control más preciso sobre los elementos que reciben las plantas. Este método es eficiente en términos de uso del agua y espacio, y se utiliza comúnmente en la agricultura urbana y en invernaderos.</p>
+            <img src="https://www.bbva.com/wp-content/uploads/2021/05/BBVA-huertos-hidropo%CC%81nicos-sostenibilidad-campo-renovable.jpg" alt="Ejemplo de cultivo hidropónico">
+        </section>
+
+        <section id="section2">
+            <h2>Origen de la Hidroponia</h2>
+            <p>El origen de la hidroponía se remonta a antiguos agricultores que experimentaron con sistemas de cultivo sin suelo. Los registros más antiguos de técnicas hidroponicas provienen de civilizaciones antiguas como los aztecas y los mayas, que cultivaban plantas en sistemas acuosos con nutrientes disueltos.
+
+Sin embargo, el desarrollo moderno de la hidroponía como una técnica agrícola científica comenzó en el siglo XIX. En 1699, el científico inglés John Woodward documentó la primera observación registrada de plantas creciendo sin suelo, en un sistema acuoso con nutrientes añadidos. Más tarde, en el siglo XIX, experimentos más sistemáticos fueron realizados por investigadores como Julius von Sachs y W.F. Gericke, quien popularizó la hidroponía como un método eficiente de cultivo en los años 1930.</p>
+            <img src="http://www.drcalderonlabs.com/Publicaciones/Historia_de_la_Hidroponia/image002.jpg" alt="Diagrama antiguo de hidroponia">
+        </section>
+
+        <section id="section3">
+            <h2>Usos de la Hidroponia</h2>
+            <ul>
+                <li>Hortalizas (lechuga, tomate, pepino, etc.)</li>
+                <li>Hierbas (albahaca, menta, cilantro, etc.)</li>
+                <li>Flores</li>
+                <li>Frutas (fresas, frambuesas, etc.)</li>
+            </ul>
+            <img src="https://www.primeraedicion.com.ar/wp-content/uploads/2019/10/hidroponiaweb.jpg" alt="Plantas creciendo en hidroponia">
+        </section>
+
+        <section id="section4">
+            <h2>Ventajas de la Hidroponia</h2>
+            <ul>
+                <li><strong>Uso eficiente del agua:</strong> La hidroponia utiliza un sistema cerrado...</li>
+            </ul>
+            <!-- Video sobre hidroponia -->
+            <video controls width="100%">
+                <source src="ruta_del_video.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+        </section>
+    </div>
+
+    <footer>
+        Creado por Bruno Mendoza
+    </footer>
+
+    <button class="dark-mode-toggle" id="darkModeToggle">
+        <span class="sun">🌞</span>
+        <span class="moon" style="display:none;">🌙</span>
+    </button>
+
+    <script>
+        document.body.addEventListener('click', function (e) {
+            var spark = document.createElement('div');
+            spark.classList.add('spark');
+            document.body.appendChild(spark);
+            var mouseX = e.clientX;
+            var mouseY = e.clientY;
+            var offsetX = window.scrollX;
+            var offsetY = window.scrollY;
+            spark.style.left = mouseX + offsetX - 5 + 'px';
+            spark.style.top = mouseY + offsetY - 5 + 'px';
+            setTimeout(function() {
+                spark.remove();
+            }, 500);
+        });
+
+        function isInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return rect.top >= 0 && rect.bottom <= window.innerHeight;
+        }
+
+        function handleScroll() {
+            const images = document.querySelectorAll('img');
+            images.forEach(image => {
+                if (isInViewport(image)) {
+                    image.classList.add('visible');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', handleScroll);
+        handleScroll();
+
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const sunIcon = darkModeToggle.querySelector('.sun');
+        const moonIcon = darkModeToggle.querySelector('.moon');
+        darkModeToggle.addEventListener('click', function () {
+            document.body.classList.toggle('dark-mode');
+            if (document.body.classList.contains('dark-mode')) {
+                sunIcon.style.display = 'none';
+                moonIcon.style.display = 'inline-block';
+            } else {
+                sunIcon.style.display = 'inline-block';
+                moonIcon.style.display = 'none';
+            }
+        });
+    </script>
+
+</body>
+</html>
